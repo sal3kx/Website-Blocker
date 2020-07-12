@@ -3,7 +3,7 @@ from datetime import datetime as dt
 from sys import platform
 
 hosts_path = ''
-
+#Checking the types of platform 
 if platform == "linux" or platform == "linux2":
     # linux
     hosts_path = "/etc/hosts"
@@ -14,10 +14,7 @@ elif platform == "win32"
 	# Windows
 	hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
 	
-
-hosts_temp=r"D:\Dropbox\pp\block_websites\Demo\hosts"
-hosts_path="/etc/hosts"
-redirect="127.0.0.1"
+redirect="127.0.0.1" # redirecting to the localhost
 website_list=["www.facebook.com","facebook.com","dub119.mail.live.com","www.dub119.mail.live.com"]
 
 while True:
